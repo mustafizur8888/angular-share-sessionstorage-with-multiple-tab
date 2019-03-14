@@ -48,7 +48,6 @@ export class AppComponent implements OnInit {
   }
   logOut() {
     localStorage.setItem('CREDENTIALS_FLUSH', Date.now().toString());
-    //window.localStorage.removeItem('CREDENTIALS_FLUSH');
     localStorage.removeItem('CREDENTIALS_FLUSH');
   }
   tokenGenerate() {
